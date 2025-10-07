@@ -564,7 +564,7 @@ h5.classh5{
      h5.classh5{
     display:block;
     margin-bottom: 10px;
-    color: red;
+  
    }
    p {
    font-size: 10px;
@@ -575,12 +575,14 @@ h5.classh5{
    }
    
     #feature{
-        justify-content: space-between;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
     }
     #product .pro1 {
-    width: 100%;
+    width: 47%;
+    margin-bottom: 20px;
     }
     #sm-banner .banner-box2 {
     margin-top: 20px;

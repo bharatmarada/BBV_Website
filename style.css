@@ -572,13 +572,11 @@ h5.classh5{
    .section-p1 {
     padding: 20px;
    }
-   #feature .fe-box {
-    width: 155px;
-    }
+   
     #feature{
         justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 10px;
+        align-items: center;
+
     }
     #product .pro1 {
     width: 100%;

@@ -382,9 +382,6 @@ button.white{
 
 
 
-
-
-
 footer{
     display: flex;
     justify-content: space-between;
@@ -455,9 +452,19 @@ footer .Install img{
 }
 
 footer .follow i:hover,
-fotter a:hover {
+footer a:hover {
     color: #088178;
 }
+
+h5.classh5{
+   display: none;
+}
+
+
+
+
+
+
 
 @media (max-width:799px){
     .section-p1 {
@@ -532,6 +539,50 @@ fotter a:hover {
 #sm-banner .banner-box {
     min-width: 100%;
     height: 30vh;
+}
+
+}
+
+@media(max-width: 477px){
+    #header {
+    padding: 10px 30px;
+}
+ #hero {
+    background-position: 66%;
+    padding: 0 20px;
+     }
+    h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    h2 {
+    font-size: 15px;
+    }
+    h4.classh4{
+    display: none;
+    }
+     h5.classh5{
+    display:block;
+    margin-bottom: 10px;
+   }
+   p {
+   font-size: 10px;
+   font-weight: 500;
+   }
+   .section-p1 {
+    padding: 20px;
+   }
+   #feature .fe-box {
+    width: 155px;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #product .pro1 {
+    width: 100%;
+    }
+    #sm-banner .banner-box2 {
+    margin-top: 20px;
 }
 
 }

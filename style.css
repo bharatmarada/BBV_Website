@@ -577,6 +577,8 @@ h5.classh5{
     }
     #feature{
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10px;
     }
     #product .pro1 {
     width: 100%;

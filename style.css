@@ -576,12 +576,13 @@ h5.classh5{
    
     #feature{
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
+        margin: 0px;
+
+        
 
     }
     #product .pro1 {
-    width: 47%;
     margin-bottom: 20px;
     }
     #sm-banner .banner-box2 {

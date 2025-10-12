@@ -101,6 +101,7 @@ button.normal{
     font-weight: 600;
     color: #1a1a1a;
     transition: 0.3s ease;
+    position: relative;
 }
 
 #navbar li a:hover,
@@ -113,10 +114,10 @@ button.normal{
 #navbar li a:hover::after {
     content: "";
     width: 100%;
-    height: 1px;
+    height: 2px;
     background:  #088178;
     position: absolute;
-    bottom: 0px; 
+    bottom: -5px; 
     left:  0px;
 }
 
@@ -126,6 +127,26 @@ button.normal{
 }
 #close{
     display: none;
+}
+
+#affiliateLink a{
+    text-decoration: none;
+    background-color: #ff1c1c;
+    padding: 5px 10px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 2px;
+    /* margin-top: 25px; */
+    cursor: pointer;
+}
+#affiliateLink a:hover{
+    background-color: #d81212;
+}
+#affiliateLink {
+    margin-top: 10px;
+     margin-bottom: 30px; 
 }
 
 
@@ -251,7 +272,29 @@ button.normal{
     transition: 0.2s ease;
     margin:15px 0;
     position: relative;
+
+    /* * 👈 THE FIX STARTS HERE */ 
+    display: flex; /* 1. Enable Flexbox */
+    flex-direction: column; /* 2. Arrange content vertically */
+    justify-content: space-between; /* 3. Distribute space between content and button (optional, but good) */
+    height: auto; /* Ensure height is flexible */
+    /* Give it a minimum height to accommodate the tallest card content */
+    min-height: 400px; /* ADJUST THIS VALUE: Find the height that fits your tallest content (e.g., the Tank Bag) */
 }
+#bbvProductsBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px;
+    background: #c8c8d1;
+    width: 50%;
+    margin-left: 350px;
+    border-radius: 5px;
+    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); */
+
+
+}
+    
 #product .pro1 img{
     width: 100%;
     border-radius:20px;
@@ -462,6 +505,194 @@ h5.classh5{
 
 
 
+/*/------------------------------------------------------------/* Shop Page-------------------------------------------------------- */
+#page-header {
+    background-image: url("Images/gearsBanner.webp");
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;      /* Ensures the image fills the area without showing extra edges */
+    background-position: center; /* Centers the main part of the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    justify-content: center;
+    /* text-align: center;
+    flex-direction: column;
+    padding: 14px;  */
+}
+/* #page-header h2, #page-header p{
+    color: #fff;
+} */
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------/* Single Product */------------------------------------------------------------ */
+
+
+#productdetails .single-pro-image {
+    width: 30%;                     /* Takes 40% of space */
+    margin-right: 20px;
+}
+
+#productdetails {
+    display: flex;                  /* Place image and details side-by-side */
+    align-items: flex-start;        /* Align from the top */
+    justify-content: space-between; /* Add spacing between columns */
+
+    
+}
+
+#productdetails .single-pro-image img {
+    width: 65%;                    /* Fits inside the 40% container */
+    border-radius: 10px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.small-img-col{
+    /* flex-basis: 20%; */
+    padding-left: 10px;
+    cursor: pointer;
+}
+#productdetails .single-pro-details{
+    width: 140%;
+    padding-top: 30px;
+}
+#productdetails .single-pro-details h3{
+    padding: 40px 0 20px 0;
+}
+#productdetails .single-pro-details h2{
+    padding-bottom: 10px;
+}
+#productdetails .single-pro-details h4{
+    padding-bottom: 10px;
+}
+#productdetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#productdetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+#productdetails .single-pro-details button{
+    background: #088178;
+    color: #fff;
+}
+#productdetails .single-pro-details span{
+    line-height: 25px;
+}
+
+/* --------------------------------------------------------------Blog-Page------------------------------------------------------------------- */
+
+.blog-header{
+    background-image: url("Images/blogsBanner.jpg");
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;      /* Ensures the image fills the area without showing extra edges */
+    background-position: center; /* Centers the main part of the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 40px;
+    color: #fff;
+    /* padding: 14px;   */
+
+}
+
+#blog{
+    padding: 50px 50px 0 100px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+#blog .blog-img{
+    width:50%;
+    margin-right: 40px;
+}
+#blog img{
+    /* width: 100%; */
+    height: 300px;
+    object-fit: cover;
+}
+.blog-details{
+    width: 50%;
+    margin-top: -100px
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+}
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover{
+    color: #088178;
+    transition: 0.3s;
+}
+
+#blog .blog-details a:hover:after {
+    background-color: #088178;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -587,6 +818,12 @@ h5.classh5{
     }
     #sm-banner .banner-box2 {
     margin-top: 20px;
+}
+
+   /* Single Product */
+   #productdetails {
+    display: flex;
+    flex-direction: column;
 }
 
 }

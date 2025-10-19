@@ -507,9 +507,10 @@ h5.classh5{
 
 /*/------------------------------------------------------------/* Shop Page-------------------------------------------------------- */
 #page-header {
-    background-image: url("Images/gearsBanner.webp");
-    width: 100%;
-    height: 40vh;
+    /* background-image: url("Images/gearsBanner.webp"); */
+    background-image: url("Images/blogsBanner.jpg");
+     width: 100%;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,7 +628,7 @@ h5.classh5{
 }
 
 #blog{
-    padding: 50px 50px 0 100px;
+    padding: 50px 50px 0 50px;
 }
 #blog .blog-box{
     display: flex;
@@ -637,15 +638,18 @@ h5.classh5{
 #blog .blog-img{
     width:50%;
     margin-right: 40px;
+    padding-bottom: 30px;
 }
-#blog img{
-    /* width: 100%; */
+
+/* #blog img{
     height: 300px;
     object-fit: cover;
-}
+} */
+
 .blog-details{
-    width: 50%;
-    margin-top: -100px
+    width: 70%;
+    margin-top: -99px;
+    margin-left: -250px;
 }
 #blog .blog-details a{
     text-decoration: none;
@@ -673,6 +677,190 @@ h5.classh5{
     background-color: #088178;
 }
 
+
+
+/* --------------------------------/* Blog page 2 styles */----------------------------------------------------- */
+#blog-container {
+    /* Optional: Center the entire section if it's not already centered */
+    text-align: center;
+}
+
+/* -------------------------------- Blog page 2 styles -------------------------------- */
+.video-block  p{
+    text-align: center;
+    padding: 20px;
+}
+
+.video-gallery {
+    display: flex
+;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 500%;
+    margin: 2px 70px;
+}
+
+.video-block {
+    /* **CRITICAL: Set the fixed size for the reel look** */
+    width: 250px; 
+    /* The flex properties prevent it from growing and allow shrinking on mobile */
+    flex: 0 0 250px; 
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    text-align: center;
+    margin: 0;
+    height :425px
+    
+}
+
+/* Ensure the video element itself takes the full width of the block */
+.video-block video {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.video-block {
+    /* **CRITICAL: Set the fixed size for the reel look** */
+    width: 250px; 
+    /* The flex properties prevent it from growing and allow shrinking on mobile */
+    flex: 0 0 250px; 
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    text-align: center;
+    margin: 0; 
+}
+
+/* Ensure the video element itself takes the full width of the block */
+.video-block video {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ----------------------------------------------------Contact Details---------------------------------------------------------------- */
+
+/* Container for the form to center it and set max width */
+.collab-form-container {
+    max-width: 750px; /* Limits the form width on large screens */
+    margin: 40px auto; /* Centers the form block horizontally */
+    padding: 30px;
+    background-color: #f8f8f8; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+.collab-form-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+/* Highlight your name in the heading */
+.collab-form-container h2 strong {
+    color: #088178; /* Your primary green color */
+    font-weight: 800;
+}
+
+
+/* Form Element Styling */
+.collab-form label {
+    display: block; /* Makes the label take the full width */
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.collab-form input[type="text"],
+.collab-form input[type="number"],
+.collab-form input[type="email"],
+.collab-form input[type="tel"],
+.collab-form textarea {
+    width: 100%; /* Makes input fields fill the form container */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't increase total width */
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: border-color 0.3s;
+}
+
+.collab-form input:focus,
+.collab-form textarea:focus {
+    border-color: #088178; /* Highlight border on focus using your theme color */
+    outline: none;
+}
+
+.collab-form textarea {
+    resize: vertical; /* Allows vertical resizing but not horizontal */
+}
+
+/* Reusing your existing .normal button style, but customizing the submit button */
+.collab-form .submit-button {
+    /* The .normal class already applies: 
+       font-size, font-weight, padding, border-radius, border:none, etc. 
+       We only customize the color/background for better theme visibility. 
+    */
+    background-color: #088178; /* Theme color */
+    color: #fff;
+    width: 100%; /* Makes the button full width */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.collab-form .submit-button:hover {
+    background-color: #066a5c; /* Darker shade on hover */
+}
+
+
+/* -------------------------------- MOBILE RESPONSIVENESS FOR CONTACT DEATILS -------------------------------- */
+
+@media (max-width: 799px) {
+    .collab-form-container {
+        max-width: 90%; /* Use more width on tablets */
+        padding: 20px;
+    }
+    .collab-form-container h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 477px) {
+    .collab-form-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .collab-form-container h2 {
+        font-size: 20px;
+    }
+    .collab-form input,
+    .collab-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* -----------------------------------------------------END Mobile responsive of Contact Details---------------------------------- */
 
 
 
